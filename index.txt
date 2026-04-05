@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PL Auto Detailing — Premium Car Care</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="styles.css">
+
+
+<link rel="apple-touch-icon" sizes="57x57" href="/src/favicons/favicon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/src/favicons/favicon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/src/favicons/favicon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/src/favicons/favicon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/src/favicons/favicon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/src/favicons/favicon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/src/favicons/favicon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/src/favicons/favicon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/src/favicons/favicon-180x180.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/src/favicons/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/src/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/src/favicons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/src/favicons/favicon-192x192.png">
+<link rel="shortcut icon" type="image/x-icon" href="/src/favicons/favicon.ico">
+<link rel="icon" type="image/x-icon" href="/src/favicons/favicon.ico">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/src/favicons/favicon-144x144.png">
+<meta name="msapplication-config" content="/src/favicons/browserconfig.xml">
+<link rel="manifest" href="/src/manifest.json">
+<meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">
+      <span class="logo-pl">PL</span>
+      <span class="logo-text">AUTO DETAILING</span>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#gallery" class="nav-link">Gallery</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#pricing" class="nav-link">Pricing</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+    <a href="#contact" class="nav-cta">BOOK NOW</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#services" class="mobile-link">Services</a>
+    <a href="#gallery" class="mobile-link">Gallery</a>
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#pricing" class="mobile-link">Pricing</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+    <a href="#contact" class="mobile-cta">BOOK NOW</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-glow"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge reveal-up">BUFFALO'S PREMIER DETAILING</div>
+      <h1 class="hero-title">
+        <span class="reveal-up delay-1">YOUR CAR</span>
+        <span class="reveal-up delay-2 accent-line">DESERVES</span>
+        <span class="reveal-up delay-3">PERFECTION</span>
+      </h1>
+      <p class="hero-sub reveal-up delay-4">Professional auto detailing that transforms your vehicle inside and out. We do more than clean cars. We restore them to their best condition.</p>
+      <div class="hero-actions reveal-up delay-5">
+        <a href="#contact" class="btn-primary">CONTACT US</a>
+        <a href="#services" class="btn-ghost">VIEW SERVICES</a>
+      </div>
+      <div class="hero-stats reveal-up delay-6">
+        <div class="stat">
+          <span class="stat-num" data-count="40">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Cars Detailed</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-count="4.5">0</span><span class="stat-plus">★</span>
+          <span class="stat-label">Star Rating</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-count="1">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>SCROLL</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrapper">
+    <div class="marquee-track">
+      <span>EXTERIOR DETAIL</span><span class="dot">✦</span>
+      <span>INTERIOR DETAIL</span><span class="dot">✦</span>
+      <span>CERAMIC COATING</span><span class="dot">✦</span>
+      <span>EXTERIOR DETAIL</span><span class="dot">✦</span>
+      <span>INTERIOR DETAIL</span><span class="dot">✦</span>
+      <span>CERAMIC COATING</span><span class="dot">✦</span>
+      <span>EXTERIOR DETAIL</span><span class="dot">✦</span>
+      <span>INTERIOR DETAIL</span><span class="dot">✦</span>
+      <span>CERAMIC COATING</span><span class="dot">✦</span>
+      <span>EXTERIOR DETAIL</span><span class="dot">✦</span>
+      <span>INTERIOR DETAIL</span><span class="dot">✦</span>
+      <span>CERAMIC COATING</span><span class="dot">✦</span>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="section-header">
+      <div class="section-tag reveal-left">WHAT WE OFFER</div>
+      <h2 class="section-title reveal-up">Our <span class="red">Services</span></h2>
+      <p class="section-sub reveal-up delay-1">Every package is executed with military precision and professional-grade products.</p>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card reveal-up delay-1">
+        <div class="service-icon-wrap">
+          <svg class="service-icon" viewBox="0 0 60 60" fill="none">
+            <circle cx="30" cy="30" r="28" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M15 38 Q30 22 45 38" stroke="currentColor" stroke-width="2" fill="none"/>
+            <path d="M20 42 Q30 30 40 42" stroke="currentColor" stroke-width="1.5" fill="none"/>
+            <circle cx="30" cy="20" r="4" fill="currentColor" opacity="0.6"/>
+          </svg>
+        </div>
+        <div class="service-num">01</div>
+        <h3 class="service-title">Exterior Detail</h3>
+        <p class="service-desc">Full exterior wash, clay bar treatment, polish, and wax. We remove surface contaminants and restore your paint's original brilliance.</p>
+        <ul class="service-features">
+          <li>Hand wash & dry</li>
+          <li>Clay bar decontamination</li>
+          <li>Polish & wax application</li>
+          <li>Tire & trim dressing</li>
+        </ul>
+        <a href="#contact" class="service-cta">Book This Service →</a>
+        <div class="service-glow"></div>
+      </div>
+
+      <div class="service-card reveal-up delay-2">
+        <div class="service-icon-wrap">
+          <svg class="service-icon" viewBox="0 0 60 60" fill="none">
+            <rect x="10" y="15" width="40" height="30" rx="4" stroke="currentColor" stroke-width="1.5"/>
+            <rect x="16" y="21" width="28" height="18" rx="2" fill="currentColor" opacity="0.1"/>
+            <circle cx="20" cy="38" r="2" fill="currentColor"/>
+            <circle cx="40" cy="38" r="2" fill="currentColor"/>
+            <path d="M24 21 L36 21" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div class="service-num">02</div>
+        <h3 class="service-title">Interior Detail</h3>
+        <p class="service-desc">Deep clean of every surface inside your vehicle. We vacuum, shampoo, and condition every inch — leaving it showroom fresh.</p>
+        <ul class="service-features">
+          <li>Full vacuum & steam clean</li>
+          <li>Carpet & seat shampooing</li>
+          <li>Dashboard & console wipe</li>
+          <li>Leather conditioning</li>
+        </ul>
+        <a href="#contact" class="service-cta">Book This Service →</a>
+        <div class="service-glow"></div>
+      </div>
+
+      <div class="service-card reveal-up delay-3 featured-card">
+        <div class="featured-badge">MOST POPULAR</div>
+        <div class="service-icon-wrap">
+          <svg class="service-icon" viewBox="0 0 60 60" fill="none">
+            <path d="M30 10 L34 24 L48 24 L37 33 L41 47 L30 38 L19 47 L23 33 L12 24 L26 24 Z" stroke="currentColor" stroke-width="1.5" fill="currentColor" opacity="0.2"/>
+          </svg>
+        </div>
+        <div class="service-num">03</div>
+        <h3 class="service-title">Full Detail Package</h3>
+        <p class="service-desc">The complete treatment. Combines our exterior and interior services with paint correction for a full transformation. This is the PL signature experience.</p>
+        <ul class="service-features">
+          <li>Everything in Exterior + Interior</li>
+          <li>Paint correction & compound</li>
+          <li>Glass treatment</li>
+          <li>Engine bay cleaning</li>
+        </ul>
+        <a href="#contact" class="service-cta">Book This Service →</a>
+        <div class="service-glow featured-glow"></div>
+      </div>
+
+      <div class="service-card reveal-up delay-4">
+        <div class="service-icon-wrap">
+          <svg class="service-icon" viewBox="0 0 60 60" fill="none">
+            <path d="M10 30 Q30 10 50 30" stroke="currentColor" stroke-width="1.5" fill="none"/>
+            <path d="M15 35 Q30 18 45 35" stroke="currentColor" stroke-width="2" fill="currentColor" opacity="0.15"/>
+            <circle cx="30" cy="42" r="5" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div class="service-num">04</div>
+        <h3 class="service-title">Ceramic Coating</h3>
+        <p class="service-desc">Long-lasting nano-ceramic protection that bonds to your paint, providing years of hydrophobic, scratch-resistant protection with a mirror-like gloss.</p>
+        <ul class="service-features">
+          <li>Nano-ceramic bond application</li>
+          <li>2–5 year protection</li>
+          <li>Hydrophobic finish</li>
+          <li>UV & scratch resistance</li>
+        </ul>
+        <a href="#contact" class="service-cta">Book This Service →</a>
+        <div class="service-glow"></div>
+      </div>
+
+      <div class="service-card reveal-up delay-5">
+        <div class="service-icon-wrap">
+          <svg class="service-icon" viewBox="0 0 60 60" fill="none">
+            <circle cx="30" cy="30" r="15" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="30" cy="30" r="8" stroke="currentColor" stroke-width="1"/>
+            <path d="M30 15 L30 10" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M30 50 L30 45" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M15 30 L10 30" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M50 30 L45 30" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div class="service-num">05</div>
+        <h3 class="service-title">Paint Correction</h3>
+        <p class="service-desc">Multi-stage machine polishing to eliminate swirl marks, water spots, and light scratches. We restore your paint to better-than-new condition.</p>
+        <ul class="service-features">
+          <li>Swirl & scratch removal</li>
+          <li>Machine compound polish</li>
+          <li>Paint depth measurement</li>
+          <li>Before & after photos</li>
+        </ul>
+        <a href="#contact" class="service-cta">Book This Service →</a>
+        <div class="service-glow"></div>
+      </div>
+
+      <div class="service-card reveal-up delay-6">
+        <div class="service-icon-wrap">
+          <svg class="service-icon" viewBox="0 0 60 60" fill="none">
+            <rect x="12" y="20" width="36" height="24" rx="3" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M20 20 L20 16 Q20 12 25 12 L35 12 Q40 12 40 16 L40 20" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M20 32 L28 32 M32 32 L40 32" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div class="service-num">06</div>
+        <h3 class="service-title">Headlight Restoration</h3>
+        <p class="service-desc">Oxidized, cloudy headlights dramatically reduce visibility and your car's appearance. We restore clarity and seal against future yellowing.</p>
+        <ul class="service-features">
+          <li>Wet sand & compound</li>
+          <li>UV clear coat seal</li>
+          <li>Improved nighttime safety</li>
+          <li>Lasting clarity warranty</li>
+        </ul>
+        <a href="#contact" class="service-cta">Book This Service →</a>
+        <div class="service-glow"></div>
+      </div>
+
+    </div>
+  </section>
+
+    <!-- GALLERY SECTION — replace src="YOUR_IMAGE_X.jpg" with your actual images -->
+<section class="gallery" id="gallery">
+  <div class="section-header">
+    <div class="section-tag reveal-left">OUR WORK</div>
+    <h2 class="section-title reveal-up">THE <span class="red">AFTER</span></h2>
+    <p class="section-sub reveal-up delay-1">Results speak louder than words. See the PL difference.</p>
+  </div>
+
+  <div class="gallery-grid">
+
+    <div class="gallery-item reveal-scale delay-1">
+      <div class="gallery-img-wrap">
+        <img src="/src/gallery-5.jpg" alt="Ceramic Detail - Mercedes Benz AMG G-63 Class" />
+      </div>
+      <div class="gallery-overlay">
+        <span class="gallery-tag">CERAMIC DETAIL</span>
+        <span class="gallery-label">Mercedes Benz AMG G-63 Class</span>
+      </div>
+    </div>
+
+    <div class="gallery-item reveal-scale delay-2">
+      <div class="gallery-img-wrap">
+        <img src="/src/gallery-2.jpg" alt="Standard Detail - BMW X7" />
+      </div>
+      <div class="gallery-overlay">
+        <span class="gallery-tag">STANDARD DETAIL</span>
+        <span class="gallery-label">BMW X7</span>
+      </div>
+    </div>
+
+    <div class="gallery-item reveal-scale delay-3">
+      <div class="gallery-img-wrap">
+        <img src="/src/gallery-3.jpg" alt="Interior Detail - Honda CR-V Hybrid" />
+      </div>
+      <div class="gallery-overlay">
+        <span class="gallery-tag">INTERIOR DETAIL</span>
+        <span class="gallery-label">Honda CR-V Hybrid</span>
+      </div>
+    </div>
+
+    <div class="gallery-item reveal-scale delay-4">
+      <div class="gallery-img-wrap">
+        <img src="/src/gallery-4.jpg" alt="Ceramic Detail - Mercedes Benz AMG G-63 Class" />
+      </div>
+      <div class="gallery-overlay">
+        <span class="gallery-tag">CERAMIC DETAIL</span>
+        <span class="gallery-label">Mercedes Benz AMG G-63 Class</span>
+      </div>
+    </div>
+
+    <div class="gallery-item reveal-scale delay-5">
+      <div class="gallery-img-wrap">
+        <img src="/src/gallery-1.jpg" alt="Standard Detail - Tesla Y Model" />
+      </div>
+      <div class="gallery-overlay">
+        <span class="gallery-tag">STANDARD DETAIL</span>
+        <span class="gallery-label">Tesla Y Model</span>
+      </div>
+    </div>
+
+    <div class="gallery-item reveal-scale delay-6">
+      <div class="gallery-img-wrap">
+        <img src="/src/gallery-6.jpg" alt="Standard Detail - BMW X7" />
+      </div>
+      <div class="gallery-overlay">
+        <span class="gallery-tag">STANDARD DETAIL</span>
+        <span class="gallery-label">BMW X7</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="gallery-cta reveal-up">
+    <p>Want to see your car here?</p>
+    <a href="#contact" class="btn-primary">GET YOUR CAR DETAILED</a>
+  </div>
+</section>
+
+  <!-- WHY US / ABOUT -->
+  <section class="about" id="about">
+    <div class="about-inner">
+      <div class="about-left reveal-left">
+        <div class="section-tag">WHO WE ARE</div>
+        <h2 class="section-title">Built on <span class="red">Passion</span><br>Driven by <span class="red">Perfection</span></h2>
+        <p class="about-text">PL Auto Detailing was built by car enthusiasts, for car enthusiasts. We treat every vehicle like it's our own.</p>
+        <p class="about-text">We use only professional-grade products: Meguiar's, Chemical Guys, Gtechniq, and 3M. No shortcuts. No compromises. Just results that speak for themselves.</p>
+        <div class="about-highlights">
+          <div class="highlight-item">
+            <div class="highlight-icon">✦</div>
+            <div>
+              <strong>Mobile Service Available</strong>
+              <p>We come to you — home, office, wherever.</p>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-icon">✦</div>
+            <div>
+              <strong>100% Satisfaction Guarantee</strong>
+              <p>If you're not happy, we make it right.</p>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-icon">✦</div>
+            <div>
+              <strong>Professional</strong>
+              <p>Fully professional for your peace of mind.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-right reveal-right">
+        <div class="about-visual">
+          <div class="av-card av-card-1">
+            <div class="av-num">40+</div>
+            <div class="av-label">Happy Customers</div>
+          </div>
+          <div class="av-card av-card-2">
+            <div class="av-num">1+</div>
+            <div class="av-label">Years in Business</div>
+          </div>
+          <div class="av-card av-card-3">
+            <div class="av-num">4★</div>
+            <div class="av-label">Google Rating</div>
+          </div>
+          <div class="av-ring"></div>
+          <div class="av-ring av-ring-2"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS BAR -->
+  <section class="process">
+    <div class="section-header">
+      <div class="section-tag reveal-left">HOW IT WORKS</div>
+      <h2 class="section-title reveal-up">The PL <span class="red">Process</span></h2>
+    </div>
+    <div class="process-steps">
+      <div class="process-step reveal-up delay-1">
+        <div class="step-num">01</div>
+        <div class="step-bar"></div>
+        <div class="step-content">
+          <h4>Book Online</h4>
+          <p>Fill out our quick contact form or text us directly. We'll confirm your appointment within 24 hours.</p>
+        </div>
+      </div>
+      <div class="process-step reveal-up delay-2">
+        <div class="step-num">02</div>
+        <div class="step-bar"></div>
+        <div class="step-content">
+          <h4>We Inspect</h4>
+          <p>We do a thorough inspection and walkthrough of your vehicle before starting any work.</p>
+        </div>
+      </div>
+      <div class="process-step reveal-up delay-3">
+        <div class="step-num">03</div>
+        <div class="step-bar"></div>
+        <div class="step-content">
+          <h4>We Detail</h4>
+          <p>We get to work with precision and professionalism, treating every inch of your car with care.</p>
+        </div>
+      </div>
+      <div class="process-step reveal-up delay-4">
+        <div class="step-num">04</div>
+        <div class="step-bar"></div>
+        <div class="step-content">
+          <h4>You Enjoy</h4>
+          <p>Pick up your car looking better than ever. We walk you through everything we did before handing over the keys.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing" id="pricing">
+    <div class="section-header">
+      <div class="section-tag reveal-left">TRANSPARENT PRICING</div>
+      <h2 class="section-title reveal-up">Simple, <span class="red">Honest</span> Prices</h2>
+      <p class="section-sub reveal-up delay-1">No hidden fees. No surprises. Just quality work at fair prices.</p>
+    </div>
+    <div class="pricing-grid">
+
+      <div class="price-card reveal-up delay-1">
+        <div class="price-tier">Exterior or Interior Detail</div>
+        <div class="price-amount"><span class="price-dollar">$</span>100<span class="price-from">+</span><span class="price-from2">Exterior</span></div>
+        <div class="price-desc">Perfect for regular maintenance and keeping your car fresh.</div>
+        <ul class="price-features">
+          <li><span class="check">✓</span> Power Washing</li>
+          <li><span class="check">✓</span> Wiping</li>
+          <li><span class="check">✓</span> Tire Shine</li>
+          <li><span class="muted">✗</span> Ceramic Coating</li>
+          <li><span class="muted">✗</span> Deep Cleaning</li>
+          <li><span class="muted">✗</span> Vacuuming</li>
+          <li><span class="muted">✗</span> Steam Cleaning</li>
+        </ul>
+        <div class="price-amount"><span class="price-dollar">$</span>130<span class="price-from">+</span><span class="price-from2">Interior</span></div>
+        <ul class="price-features">
+          <li><span class="check">✓</span> Deep Cleaning</li>
+          <li><span class="check">✓</span> Vacuuming</li>
+          <li><span class="check">✓</span> Steam Cleaning</li>
+          <li><span class="muted">✗</span> Power Washing</li>
+          <li><span class="muted">✗</span> Wiping</li>
+          <li><span class="muted">✗</span> Tire Shine</li>
+          <li><span class="muted">✗</span> Ceramic Coating</li>
+        </ul>
+        <a href="#contact" class="price-btn">Book Interior or Exterior Detail</a>
+      </div>
+
+      <div class="price-card featured-price reveal-up delay-2">
+        <div class="price-popular-tag">BEST VALUE</div>
+        <div class="price-tier">Standard Detail</div>
+        <div class="price-amount"><span class="price-dollar">$</span>200<span class="price-from">+</span></div>
+        <div class="price-desc">Our signature service. Complete inside and out transformation.</div>
+        <ul class="price-features">
+          <li><span class="check">✓</span> Power Washing</li>
+          <li><span class="check">✓</span> Wiping</li>
+          <li><span class="check">✓</span> Tire Shine</li>
+          <li><span class="check">✓</span> Deep Cleaning</li>
+          <li><span class="check">✓</span> Vacuuming</li>
+          <li><span class="check">✓</span> Steam Cleaning</li>
+          <li><span class="muted">✗</span> Ceramic Coating</li>
+        </ul>
+        <a href="#contact" class="price-btn featured-btn">Book Standard Detail</a>
+      </div>
+
+      <div class="price-card reveal-up delay-3">
+        <div class="price-tier">Ceramic Detail</div>
+        <div class="price-amount"><span class="price-dollar">$</span>240<span class="price-from">+</span></div>
+        <div class="price-desc">Long-term paint protection for those who want the absolute best.</div>
+        <ul class="price-features">
+          <li><span class="check">✓</span> Power Washing</li>
+          <li><span class="check">✓</span> Wiping</li>
+          <li><span class="check">✓</span> Tire Shine</li>
+          <li><span class="check">✓</span> Ceramic Coating</li>
+          <li><span class="check">✓</span> Deep Cleaning</li>
+          <li><span class="check">✓</span> Vacuuming</li>
+          <li><span class="check">✓</span> Steam Cleaning</li>
+        </ul>
+        <a href="#contact" class="price-btn">Book Ceramic Detail</a>
+      </div>
+
+    </div>
+    <p class="pricing-note reveal-up">Prices vary based on vehicle size and condition. Contact us for a custom quote.</p>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="section-header">
+      <div class="section-tag reveal-left">WHAT CLIENTS SAY</div>
+      <h2 class="section-title reveal-up">Real <span class="red">Reviews</span></h2>
+    </div>
+    <div class="testimonials-track-wrap">
+      <div class="testimonials-track" id="testimonialsTrack">
+
+        <div class="testimonial-card">
+          <div class="test-stars">★★★★★</div>
+          <p class="test-text">"My car looked better than the day I bought it. PL Auto Detailing is on another level — the paint correction they did on my BMW was absolutely incredible."</p>
+          <div class="test-author">
+            <div class="test-avatar">JM</div>
+            <div>
+              <strong>James M.</strong>
+              <span>2021 BMW M4</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="test-stars">★★★★★</div>
+          <p class="test-text">"I had my Tesla's interior detailed and it felt brand new. The attention to detail is insane — they cleaned spots I didn't even know existed. Worth every penny."</p>
+          <div class="test-author">
+            <div class="test-avatar">SR</div>
+            <div>
+              <strong>Sarah R.</strong>
+              <span>2022 Tesla Model 3</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="test-stars">★★★★★</div>
+          <p class="test-text">"Booked the ceramic coating package and I'm blown away. My truck repels water like a champ now and the shine is unreal. The mobile service was super convenient too."</p>
+          <div class="test-author">
+            <div class="test-avatar">DK</div>
+            <div>
+              <strong>Derek K.</strong>
+              <span>2020 F-150 Raptor</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="test-stars">★★★★★</div>
+          <p class="test-text">"Professional, punctual, and passionate about their work. PL Auto Detailing restored my Porsche's headlights and the difference in nighttime visibility is night and day."</p>
+          <div class="test-author">
+            <div class="test-avatar">MC</div>
+            <div>
+              <strong>Mike C.</strong>
+              <span>2018 Porsche Macan</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="test-stars">★★★★★</div>
+          <p class="test-text">"These guys are the real deal. I've been to many detailers and PL blows them all out of the water. The full detail package is absolutely worth every cent. My car is stunning."</p>
+          <div class="test-author">
+            <div class="test-avatar">AL</div>
+            <div>
+              <strong>Ashley L.</strong>
+              <span>2023 Mercedes GLE</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="test-controls">
+      <button class="test-prev" id="testPrev">←</button>
+      <div class="test-dots" id="testDots"></div>
+      <button class="test-next" id="testNext">→</button>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <div class="contact-left reveal-left">
+        <div class="section-tag">GET IN TOUCH</div>
+        <h2 class="section-title">Book Your <span class="red">Detail</span></h2>
+        <p class="contact-text">Ready to give your car the treatment it deserves? Fill out the form or text us and we'll get back to you within 24 hours with a free quote.</p>
+        <div class="contact-info">
+          <div class="contact-info-item">
+            <div class="ci-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.37 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.7a16 16 0 0 0 6 6l.86-.86a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.27 16z"/>
+              </svg>
+            </div>
+            <div>
+              <strong>Phone</strong>
+              <p>(716) 342-6656</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="ci-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <div>
+              <strong>Email</strong>
+              <p>example@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="ci-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div>
+              <strong>Area</strong>
+              <p>Buffalo / East Amherst, NY</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="ci-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <div>
+              <strong>Hours</strong>
+              <p>Sat – Sun: 4pm – 10PM</p>
+              <p>Mon – Fri: 11AM – 10PM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-right reveal-right">
+        <form class="contact-form" id="contactForm" novalidate>
+  <div class="form-row">
+    <div class="form-group">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="John Smith" required />
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="(716) 555-0000" />
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" placeholder="john@example.com" required />
+  </div>
+  <div class="form-row">
+    <div class="form-group">
+      <label for="vehicle">Vehicle</label>
+      <input type="text" id="vehicle" name="vehicle" placeholder="2021 BMW M4" />
+    </div>
+    <div class="form-group">
+      <label for="service">Service</label>
+      <select id="service" name="service">
+        <option value="">Select a service...</option>
+        <option>Exterior Detail</option>
+        <option>Interior Detail</option>
+        <option>Full Detail Package</option>
+        <option>Ceramic Coating</option>
+        <option>Paint Correction</option>
+        <option>Headlight Restoration</option>
+        <option>Custom Quote</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="message">Additional Notes</label>
+    <textarea id="message" name="message" rows="4" placeholder="Any specific concerns or requests?"></textarea>
+  </div>
+  <button type="submit" class="form-submit" id="formSubmit">
+    <span class="submit-text">SEND REQUEST</span>
+    <span class="submit-arrow">→</span>
+  </button>
+  <div class="form-success" id="formSuccess">
+    <span class="success-icon">✓</span>
+    <span>Message sent! We'll be in touch within 24 hours.</span>
+  </div>
+  <div class="form-error" id="formError">
+    <span class="error-icon">✕</span>
+    <span>Something went wrong. Please try again or call us directly.</span>
+  </div>
+</form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="logo-pl">PL</span>
+          <span class="logo-text">AUTO DETAILING</span>
+        </div>
+        <p>Buffalo's premier auto detailing service. Professional. Passionate. Perfect.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-links-group">
+        <h5>Services</h5>
+        <a href="#services">Exterior Detail</a>
+        <a href="#services">Interior Detail</a>
+        <a href="#services">Standard Detail</a>
+        <a href="#services">Ceramic Detail</a>
+      </div>
+      <div class="footer-links-group">
+        <h5>Company</h5>
+        <a href="#about">About Us</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact">Book Now</a>
+      </div>
+      <div class="footer-links-group">
+        <h5>Contact</h5>
+        <a href="tel:7165550192">(716) 342-6656</a>
+        <a href="mailto:contact@plautodetailing.com">example@gmail.com</a>
+        <span>Buffalo / East Amherst, NY</span>
+        <span>Sat – Sun: 4pm – 10PM</span>
+        <span>Mon – Fri: 11AM – 10PM</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025-2026 PL Auto Detailing. All rights reserved.</p>
+      <p>Crafted with passion in Buffalo, NY</p>
+    </div>
+  </footer>
+
+  
+</body>
+</html>
